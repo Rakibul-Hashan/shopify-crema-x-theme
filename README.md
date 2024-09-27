@@ -20,16 +20,4 @@ _(Additional descriptions for other files can be included similarly.)_
 
 ---
 
-## License
-
-This theme is licensed under the [MIT License](LICENSE). You may use, modify, and distribute this theme as long as you include the original license in your distribution.
-
----
-
-## Support
-
-For support or questions, please contact us at [support@example.com](mailto:support@example.com).
-
----
-
 **Crema y Pomada © 2024 | All Rights Reserved**
