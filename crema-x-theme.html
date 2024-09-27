@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crema y Pomada Store Theme Documentation</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#theme-structure">1. Theme Structure</a></li>
+            <li><a href="#worked-files">2. Worked Files</a></li>
+            <li><a href="#metafield-definitions">3. Custom Data / Metafield Definitions</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <h1>Crema y Pomada Store Theme Documentation</h1>
+            <p>This document outlines the structure, worked files, and custom data of the Crema y Pomada Shopify theme.</p>
+
+            <!-- Section 1: Theme Structure -->
+            <div class="section" id="theme-structure">
+                <h2>1. Theme Structure</h2>
+                <button class="collapsible">📂 Theme Folder Structure</button>
+                <div class="content">
+                    <div class="tree-structure">
+    /creama-x-theme<br>
+    ├── 📂 <span class="folder">/assets</span><br>
+    │   ├── 📂 icons<br>
+    │   ├── 📂 images<br>
+    │   ├── 📂 social<br>
+    │   ├── .css files (e.g., base.css)<br>
+    │   ├── .js files (e.g., global.js)<br>
+    │   ├── .svg files (e.g., placeholder.svg)<br>
+    │   └── .json files (e.g., colors.json)<br>
+    ├── 📂 <span class="folder">/config</span><br>
+    │   ├── settings_schema.json<br>
+    │   ├── settings_data.json<br>
+    │   └── presets (optional)<br>
+    ├── 📂 <span class="folder">/layout</span><br>
+    │   ├── theme.liquid<br>
+    │   └── password.liquid (optional)<br>
+    ├── 📂 <span class="folder">/locales</span><br>
+    │   ├── en.default.json<br>
+    │   └── other language files (.json)<br>
+    ├── 📂 <span class="folder">/sections</span><br>
+    │   ├── header.liquid<br>
+    │   ├── footer.liquid<br>
+    │   ├── main-collection-product-grid.liquid<br>
+    │   ├── featured-collection.liquid<br>
+    │   ├── featured-product.liquid<br>
+    │   ├── rich-text.liquid<br>
+    │   └── other section files (.liquid)<br>
+    ├── 📂 <span class="folder">/snippets</span><br>
+    │   ├── product-grid-item.liquid<br>
+    │   ├── icon-pinterest.liquid<br>
+    │   ├── social-meta-tags.liquid<br>
+    │   ├── facet-filters.liquid<br>
+    │   ├── breadcrumbs.liquid<br>
+    │   └── other snippet files (.liquid)<br>
+    ├── 📂 <span class="folder">/templates</span><br>
+    │   ├── 📂 customers<br>
+    │   │   ├── login.liquid<br>
+    │   │   ├── register.liquid<br>
+    │   │   └── other customer-related templates (.liquid)<br>
+    │   ├── collection.liquid<br>
+    │   ├── product.liquid<br>
+    │   ├── index.liquid<br>
+    │   ├── page.liquid<br>
+    │   ├── blog.liquid<br>
+    │   └── other template files (.liquid)<br>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Section 2: Worked Files -->
+            <div class="section" id="worked-files">
+                <h2>2. Worked Files</h2>
+                <p>Detailed list of files worked on with changes:</p>
+
+                <button class="collapsible">📂 Layout Files</button>
+                <div class="content">
+                    <div class="tree-structure">
+    /creama-x-theme<br>
+    ├── 📂 <span class="folder">/assets</span><br>
+    │   ├── custom.css 📝<br>
+    │   ├── section-image-banner.css 📝<br>
+    │   ├── section-image-banner.js 📝<br>
+    │   ├── component-card.css 📝<br>
+    │   ├── base.css 📝<br>
+    │   ├── component-image-with-text.css 📝<br>
+    │   ├── component-image-with-text-2.css 📝<br>
+    │   └── custom-product-variant.css 📝<br>
+    │   └── component-product-variant-picker.css 📝<br>
+    ├── 📂 <span class="folder">/layout</span><br>
+    │   ├── theme.liquid 📝<br>
+    ├── 📂 <span class="folder">/locales</span><br>
+    │   ├── en.default.schema.json<br>
+    ├── 📂 <span class="folder">/sections</span><br>
+    │   ├── header.liquid 📝<br>
+    │   ├── image-banner.liquid 📝<br>
+    │   ├── featured-collection.liquid 📝<br>
+    │   ├── main-product.liquid<br>
+    │   ├── image-with-text.liquid<br>
+    │   ├── custom-basic-page.liquid<br>
+    │   └── contact-form.liquid<br>
+    ├── 📂 <span class="folder">/snippets</span><br>
+    │   ├── card-collection.liquid 📝<br>
+    │   ├── icon-account.liquid<br>
+    │   ├── popup-product-details.liquid<br>
+    │   ├── header-search.liquid<br>
+    │   ├── icon-hamburger.liquid<br>
+    │   └── product-variant-options.liquid<br>
+    └── 📂 <span class="folder">/templates</span><br>
+    │   └── page.custom-basic-template.json<br>
+</div>
+
+                </div>
+
+                <button class="collapsible">📂 Assets</button>
+                <div class="content">
+                    <div class="worked-files">
+    <h2 class="section-title">Worked Files</h2>
+    
+    <ul class="file-list">
+        <li class="file-item">
+            <span class="file-name"><strong>custom.css 📝</strong></span>
+            <p class="file-description">This file contains custom styles that were added to enhance the overall aesthetics of the website. Changes include adjustments to typography, colors, and layout elements for better alignment with the brand's identity.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>section-image-banner.css 📝</strong></span>
+            <p class="file-description">Styles for the image banner section were updated to improve responsiveness and visual appeal. New hover effects and transitions were added for a smoother user experience.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>section-image-banner.js 📝</strong></span>
+            <p class="file-description">JavaScript functionality was implemented to enable dynamic content switching in the image banner. This enhances user engagement by displaying multiple images seamlessly.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>component-card.css 📝</strong></span>
+            <p class="file-description">The card component styles were revised to ensure consistency across the site. Modifications include padding adjustments and border-radius changes for a more modern look.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>base.css 📝</strong></span>
+            <p class="file-description">Base styles were adjusted to create a cohesive design foundation. This includes resetting default browser styles and setting a consistent color palette throughout the site.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>component-image-with-text.css 📝</strong></span>
+            <p class="file-description">Updates to this component focused on improving text visibility over images. Added text shadows and background overlays to enhance readability and visual hierarchy.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>component-image-with-text-2.css 📝</strong></span>
+            <p class="file-description">This file includes additional styles for a variation of the image-with-text component. New layout options were added to support different content arrangements.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>custom-product-variant.css 📝</strong></span>
+            <p class="file-description">Custom styles were created for product variants to improve the presentation and functionality of product selection. This includes better alignment of variant options and enhanced hover effects.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>component-product-variant-picker.css 📝</strong></span>
+            <p class="file-description">Styles for the product variant picker were refined to create a more user-friendly interface. Changes include improved spacing and visibility for selected options.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>theme.liquid 📝</strong></span>
+            <p class="file-description">The main theme file was modified to integrate new components and styles. This includes adding conditional logic for displaying different layouts based on user interactions.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>en.default.schema.json</strong></span>
+            <p class="file-description">Updates to the schema file were made to include additional settings for new features. This ensures that the theme remains compatible with future updates.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>header.liquid 📝</strong></span>
+            <p class="file-description">The header was redesigned to include a more streamlined navigation experience. Changes also included adding a search bar and social media links for better accessibility.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>image-banner.liquid 📝</strong></span>
+            <p class="file-description">The image banner section was revamped to allow for more customization options. Modifications include enabling the use of different image sizes and formats.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>featured-collection.liquid 📝</strong></span>
+            <p class="file-description">Changes to the featured collection section enhanced the layout and visibility of products. Updated styles ensure that products are displayed attractively and responsively.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>main-product.liquid</strong></span>
+            <p class="file-description">The main product template was updated to include new product information sections. Enhanced layout for better user experience and information clarity.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>image-with-text.liquid</strong></span>
+            <p class="file-description">Enhancements were made to this section for better integration of images with text. New features include adjustable image sizes and alignment options.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>custom-basic-page.liquid</strong></span>
+            <p class="file-description">A new template was created to support basic content pages with flexible layout options. This allows for more straightforward content management.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>contact-form.liquid</strong></span>
+            <p class="file-description">The contact form was updated to improve user submission experience. Added validations and styling enhancements ensure that the form is both functional and visually appealing.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>card-collection.liquid 📝</strong></span>
+            <p class="file-description">The styles and layout of the card collection were modified to present collections more attractively. New hover effects and improved spacing enhance the visual experience.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>icon-account.liquid</strong></span>
+            <p class="file-description">The account icon was redesigned for a fresher look. This change aligns with the overall design updates throughout the site.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>popup-product-details.liquid</strong></span>
+            <p class="file-description">The popup for product details was improved to display more information clearly. Enhanced styles and animations were added for a smoother user experience.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>header-search.liquid</strong></span>
+            <p class="file-description">The header search functionality was improved with better styles and integration into the main header. Ensures users can easily find products.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>icon-hamburger.liquid</strong></span>
+            <p class="file-description">The hamburger menu icon was updated for better visibility and interaction. Changes include size adjustments and hover effects.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>product-variant-options.liquid</strong></span>
+            <p class="file-description">This snippet was revised to streamline the presentation of product variants. Adjustments were made to enhance usability and visual clarity.</p>
+        </li>
+        <li class="file-item">
+            <span class="file-name"><strong>page.custom-basic-template.json</strong></span>
+            <p class="file-description">The custom basic template was created to facilitate the use of standard page layouts. It supports various content types and enhances site flexibility.</p>
+        </li>
+    </ul>
+</div>
+
+                </div>
+
+                <!-- Other worked files collapsible sections can follow the same structure -->
+            </div>
+
+            <!-- Section 3: Custom Data/Product Metafield Definitions -->
+           <section>
+               <button class="collapsible">
+                Metafields
+               </button>
+               <div class="content">
+<div class="product-metafields">
+    <h2 class="metafields-title">Product Metafields</h2>
+    
+    <div class="metafield-item">
+        <h3 class="metafield-name">Terms and Conditions</h3>
+        <div class="metafield-description">
+            <p>Here you can add your terms and conditions relevant to this product. Ensure clarity and completeness to inform customers about their purchase.</p>
+        </div>
+    </div>
+
+    <div class="metafield-item">
+        <h3 class="metafield-name">What You Can</h3>
+        <div class="metafield-description">
+            <p>Details about what the customer can expect from the product, its usage, and features can be added here. Use the rich text editor for formatting.</p>
+        </div>
+    </div>
+
+    <div class="metafield-item">
+        <h3 class="metafield-name">Includes</h3>
+        <div class="metafield-description">
+            <p>List what is included with the product. This might be accessories, components, or services provided with the purchase.</p>
+        </div>
+    </div>
+
+    <div class="metafield-item">
+        <h3 class="metafield-name">What You Need</h3>
+        <div class="metafield-description">
+            <p>Specify any requirements or additional items needed for the product to function properly, such as batteries, software, or other equipment.</p>
+        </div>
+    </div>
+</div>
+
+                   </div>
+           </section>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Crema y Pomada © 2024 | All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        // Collapsible Sections
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
